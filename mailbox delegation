@@ -1,0 +1,9 @@
+#Mailbox full access
+Add-MailboxPermission -identity "test@angloamerican.com" -user "test@angloaman.com" -AccessRights fullaccess -AutoMapping $False
+
+#Mailbox send as access
+Add-RecipientPermission "test@claremoscu.ie" -AccessRights SendAs -Trustee "test@claorriscu.ie
+
+#Check the permission on mailbox
+Get-RecipientPermission -Identity CUTAB@clareiscu.ie | fl trustee,accessrights
+Get-MailboxPermission -Identity CUTAB@clareiscu.ie | fl user,accessrights
